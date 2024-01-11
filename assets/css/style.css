@@ -1,3 +1,4 @@
+/* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;900&display=swap");
 
 /* RESET */
@@ -126,8 +127,8 @@ body {
 
 .article .article__date {
   font-size: calc(var(--fs-body) / 1.1);
-  font-weight: var(--fw-600);
-  opacity: 0.75;
+  font-weight: var(--fw-900);
+  color: var(--clr-neutral-400);
 }
 
 .article .article__title {
@@ -136,8 +137,7 @@ body {
 }
 
 .article .article__text {
-  font-weight: var(--fw-600);
-  opacity: 0.4;
+  color: var(--clr-neutral-400);
 }
 
 .article .article__author {
