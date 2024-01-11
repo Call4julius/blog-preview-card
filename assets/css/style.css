@@ -136,6 +136,11 @@ body {
   font-weight: var(--fw-900);
 }
 
+.article .article__title:hover {
+  cursor: pointer;
+  color: var(--clr-primary);
+}
+
 .article .article__text {
   color: var(--clr-neutral-400);
 }
