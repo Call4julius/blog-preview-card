@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;900&display=swap");
+
+/* RESET */
+html {
+  /* color-scheme: dark light; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+img,
+canvas,
+picture,
+figure,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+ul[class],
+ol[class] {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* CUSTOM PROPERTIES */
+:root {
+  /* colors */
+  --clr-primary: hsl(47, 88%, 63%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-400: hsl(0, 0%, 50%);
+  --clr-neutral-900: hsl(0, 0%, 7%);
+
+  /* typography */
+  --ff-primary: "Figtree", sans-serif;
+  --fs-body: 0.8rem;
+  --fw-600: 600;
+  --fw-900: 900;
+
+  /* border-radius */
+  --br: 20px;
+}
+
+/* UTILITY CLASSES */
+.d-grid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container {
+  padding-inline: 2rem;
+  gap: 2rem;
+}
+
+/* GENERAL STYLING */
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  background-color: var(--clr-primary);
+  place-content: center;
+  padding-block: 2rem;
+}
+
+.article {
+  place-self: center;
+  max-width: 300px;
+  padding: 1rem;
+  background-color: var(--clr-neutral-100);
+  border: 0.5px solid;
+  border-radius: var(--br);
+  box-shadow: 10px 10px;
+}
+
+.article > * + * {
+  margin-top: 1rem;
+}
+
+.article .article__image {
+  border-radius: calc(var(--br) - 5px);
+}
+
+.article .article__btn {
+  color: inherit;
+  font-weight: var(--fw-900);
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--clr-primary);
+  border-radius: calc(var(--br) - 15px);
+  padding: 0.15rem 0.6rem;
+}
+
+.article .article__date {
+  font-size: calc(var(--fs-body) / 1.1);
+  font-weight: var(--fw-600);
+  opacity: 0.75;
+}
+
+.article .article__title {
+  font-size: calc(var(--fs-body) * 1.45);
+  font-weight: var(--fw-900);
+}
+
+.article .article__text {
+  font-weight: var(--fw-600);
+  opacity: 0.4;
+}
+
+.article .article__author {
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.article .article__author--image {
+  width: 35px;
+  aspect-ratio: 1;
+}
+
+.article .article__author--name {
+  font-weight: var(--fw-900);
+}
+
+/* ATTRIBUTION */
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
